@@ -1,0 +1,13 @@
+class Solution:
+    def strStr(self, haystack: str, needle: str) -> int:
+        if(needle==""):
+            return 0
+        if(len(needle)>len(haystack)):
+            return -1
+        if needle not in haystack:
+            return -1
+        split_hay=haystack.split(needle)
+        return(len(split_hay[0]))
+        
+        
+        
